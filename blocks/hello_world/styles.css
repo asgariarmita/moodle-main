@@ -1,0 +1,175 @@
+/**
+ * This file is part of Totara LMS
+ *
+ * Copyright (C) 2020 onwards Totara Learning Solutions LTD
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * @author patrick.nehme@learnchamp.com <totara@learnchamp.com>
+ * @package block_hello_world
+ */
+
+::backdrop {
+    background-color: black;
+    opacity: 0.7;
+}
+
+.card {
+    /* min-width: fit-content;
+    max-width: 50%; */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: red;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+#userInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#avatar {
+    flex-shrink: 0;
+}
+
+#avatar img {
+    border: solid black 2px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+#info {
+    margin-left: 20px;
+}
+
+#info div:first-child {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#info div:last-child {
+    color: #888;
+}
+
+#lit {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 20px;
+    width: 45ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#actions {
+    display: flex;
+    gap: 2em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#greetingText {
+    flex-basis: 80%;
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#showModalBtn {
+    padding: 8px 16px;
+    flex-basis: 20%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#showModalBtn:hover {
+    background-color: #0056b3;
+}
+
+dialog#modal {
+    position: relative;
+    width: 500px;
+    border: none;
+    overflow: visible;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+#modalContent h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+#modalContent p {
+    font-size: 1em;
+    color: #333;
+}
+
+#closeIcon {
+    width: 2ch;
+    aspect-ratio: 1;
+    position: absolute;
+    overflow: visible;
+    border-radius: 50%;
+    right: -0.5em;
+    top: -0.5em;
+    display: grid;
+    place-items: center;
+    font-size: 1.75em;
+    border: none;
+    background: grey;
+    cursor: pointer;
+}
+
+#modalActions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 0.5rem; */
+}
+
+
+#modalContent button {
+    width: 8rem;
+    padding: 6px 12px;
+    margin: 10px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* #modalContent button#closeModalBtn {
+    background-color: #ccc;
+}
+
+#modalContent button#closeModalBtn:hover {
+    background-color: #aaa;
+} */
+
+#modalContent button#showModalBtn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#modalContent button#showModalBtn:hover {
+    background-color: #0056b3;
+}
